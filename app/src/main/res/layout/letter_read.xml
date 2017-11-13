@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:src= "@drawable/from_to"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="65dp"/>
+
+    <TextView
+        android:id="@+id/date_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2017/11/5"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#FFBC79"
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/date_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2017/12/5"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#FFBC79"
+        android:layout_toRightOf="@+id/date_from"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="23dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:layout_above="@+id/tab">
+
+        <ImageView
+            android:id="@+id/l_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/l_note"
+            android:layout_marginBottom="30dp"/>
+
+        <TextView
+            android:id="@+id/to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To."
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:layout_toRightOf="@+id/to"
+            android:layout_toLeftOf="@+id/bu_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp" />
+
+        <ScrollView
+            android:layout_below="@+id/to"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/bu_delete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:src="@drawable/delete"/>
+
+        <ImageView
+            android:id="@+id/bu_next"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="40dp"
+            android:src="@drawable/hand"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:src="@drawable/bu5"
+        android:layout_alignParentBottom="true"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/tab_diary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="DIARY"
+        android:textSize="20dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:id="@+id/tab_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="PICTURE"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/tab_diary"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="28dp"
+        />
+    <TextView
+        android:id="@+id/tab_letter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="LETTER"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/tab_pic"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:id="@+id/tab_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="SETTING"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/tab_letter"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="22dp"
+        />
+</RelativeLayout>

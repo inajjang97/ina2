@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src= "@drawable/d_title"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="20dp" />
+<!--
+    <ImageView
+        android:id="@+id/d_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/d_note"
+        android:scaleType="centerCrop"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/b2"
+        android:scaleType="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+         <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:src="@drawable/bu1"
+        android:layout_alignParentBottom="true" />
+-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_above="@+id/tab">
+
+        <ImageView
+            android:id="@+id/d_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/d_note3"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/d_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="50dp"
+            android:text="title"
+            android:textSize="15dp"
+            android:textColor="#000000"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/d_title">
+
+            <TextView
+                android:id="@+id/d_con"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp"
+                android:text="Sunny, yesterday my life was filled with rain. Sunny, you smiled at me and really eased the pain."
+                android:textSize="15dp" />
+
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/bu_write"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:src="@drawable/bu6"/>
+
+        <ImageView
+            android:id="@+id/bu_delete"
+            android:layout_toLeftOf="@+id/bu_write"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/bu7"/>
+
+        <ImageView
+            android:id="@+id/bu_next"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/hand"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:src="@drawable/bu5"
+        android:layout_alignParentBottom="true"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/tab_diary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="DIARY"
+        android:textSize="20dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:id="@+id/tab_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="PICTURE"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/tab_diary"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="28dp"
+        />
+    <TextView
+        android:id="@+id/tab_letter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="LETTER"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/tab_pic"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:id="@+id/tab_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="SETTING"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/tab_letter"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="22dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src= "@drawable/l_title"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="20dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:layout_above="@+id/tab">
+
+        <ImageView
+            android:id="@+id/l_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/l_note"
+            android:layout_marginBottom="30dp"/>
+
+        <TextView
+            android:id="@+id/t_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To."
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <EditText
+            android:id="@+id/edit_title"
+            android:layout_toRightOf="@+id/t_title"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:textSize="10dp"/>
+<!--
+       <DatePicker
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentTop="true"
+           android:layout_centerHorizontal="true"
+           android:startYear="2017"
+           android:endYear="2100">
+       </DatePicker>
+-->
+        <ScrollView
+            android:layout_below="@+id/edit_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="30dp">
+
+            <EditText
+                android:id="@+id/edit_con"
+                android:textSize="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </ScrollView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="7dp"
+            android:text="A single day is enough to make us a little larger"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:src="@drawable/bu5"
+        android:layout_alignParentBottom="true"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/tab_diary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="DIARY"
+        android:textSize="20dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:id="@+id/tab_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="PICTURE"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/tab_diary"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="28dp"
+        />
+    <TextView
+        android:id="@+id/tab_letter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="LETTER"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/tab_pic"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:id="@+id/tab_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="SETTING"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/tab_letter"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="22dp"
+        />
+</RelativeLayout>

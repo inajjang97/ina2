@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src= "@drawable/set_title"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="20dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:layout_above="@+id/tab">
+
+        <ImageView
+            android:id="@+id/bu_delete"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:src="@drawable/done"/>
+
+        <ImageView
+            android:id="@+id/t1"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:src="@drawable/name"
+            android:layout_marginLeft="30dp"/>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_below="@+id/t1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="40dp"/>
+
+        <ImageView
+            android:id="@+id/t2"
+            android:layout_below="@+id/t1"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:src="@drawable/back_col"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"/>
+
+        <RadioButton
+            android:id="@+id/back_col"
+            android:layout_below="@+id/t2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="40dp"/>
+
+        <ImageView
+            android:id="@+id/t3"
+            android:layout_below="@+id/t2"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:src="@drawable/font_col"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"/>
+
+        <RadioButton
+            android:id="@+id/font_col"
+            android:layout_below="@+id/t3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="40dp"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:src="@drawable/bu5"
+        android:layout_alignParentBottom="true"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/tab_diary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="DIARY"
+        android:textSize="20dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:id="@+id/tab_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="PICTURE"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/tab_diary"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="28dp"
+        />
+    <TextView
+        android:id="@+id/tab_letter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="LETTER"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/tab_pic"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:id="@+id/tab_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="SETTING"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/tab_letter"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="22dp"
+        />
+</RelativeLayout>
