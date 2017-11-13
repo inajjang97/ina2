@@ -3,11 +3,6 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
     <ImageView
         android:id="@+id/title"
         android:layout_width="match_parent"
@@ -16,9 +11,16 @@
         android:scaleType="centerCrop"
         android:layout_marginTop="10dp" />
 
+    <LinearLayout
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
     <RelativeLayout
-        android:layout_weight="2"
-        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -26,6 +28,7 @@
             android:id="@+id/d_note"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:scaleType="fitXY"
             android:src="@drawable/d_note3" />
 
         <TextView
@@ -33,7 +36,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:layout_marginLeft="50dp"
+            android:layout_marginLeft="30dp"
             android:text="title"
             android:textSize="15dp"
             android:textColor="#000000"/>
@@ -47,11 +50,11 @@
                 android:id="@+id/d_con"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="10dp"
                 android:text="Sunny, yesterday my life was filled with rain. Sunny, you smiled at me and really eased the pain."
-                android:textSize="15dp" />
+                android:textSize="12dp" />
 
         </ScrollView>
 
@@ -61,7 +64,7 @@
             android:layout_height="40dp"
             android:layout_marginTop="15dp"
             android:layout_alignParentRight="true"
-            android:layout_marginRight="40dp"
+            android:layout_marginRight="30dp"
             android:src="@drawable/bu6"/>
 
         <ImageView
@@ -78,66 +81,49 @@
             android:layout_height="30dp"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginRight="40dp"
+            android:layout_marginRight="30dp"
             android:layout_marginBottom="20dp"
             android:src="@drawable/hand"/>
     </RelativeLayout>
 
-    <RelativeLayout
-        android:layout_weight="7"
-        android:layout_marginTop="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    <ImageView
-        android:id="@+id/tab"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/bu5"
-        android:layout_alignParentBottom="true"
-        android:scaleType="fitXY"/>
-
         <LinearLayout
+            android:layout_weight="9"
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
-            <TextView
-                android:layout_weight="1"
+            <ImageView
                 android:id="@+id/tab_diary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:text="DIARY"
-                android:textSize="15dp" />
-
-            <TextView
                 android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/b1" />
+
+            <ImageView
                 android:id="@+id/tab_pic"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:text="PICTURE"
-                android:textSize="15dp"/>
-
-            <TextView
                 android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/b2"  />
+
+            <ImageView
                 android:id="@+id/tab_letter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:text="LETTER"
-                android:textSize="15dp" />
-
-            <TextView
                 android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/b3"  />
+
+            <ImageView
                 android:id="@+id/tab_setting"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:text="SETTING"
-                android:textSize="15dp" />
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/b4"  />
         </LinearLayout>
-    </RelativeLayout>
     </LinearLayout>
 </RelativeLayout>
