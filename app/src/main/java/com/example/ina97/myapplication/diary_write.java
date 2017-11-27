@@ -3,6 +3,7 @@ package com.example.ina97.myapplication;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -45,6 +46,17 @@ public class diary_write extends Activity {
             String title = et2.getText().toString();
             String con = et3.getText().toString();
 
+            private  void getPreferences() {
+                SharedPreferences pref = getSharedPreferences("pref", MODE_PRIVATE);
+                pref.getString("hoho","");
+            }
+
+            private  void savePreferences(){
+                SharedPreferences pref = getSharedPreferences("pref", MODE_PRIVATE);
+                SharedPreferences.Editor editor = pref.edit();
+                editor.putString("name", "Inna JJang");
+                editor.commit();
+            }
             @Override
             public void onClick(View v){
 
