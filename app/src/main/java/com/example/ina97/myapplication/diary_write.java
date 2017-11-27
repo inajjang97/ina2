@@ -48,7 +48,7 @@ public class diary_write extends Activity {
 
             private  void getPreferences() {
                 SharedPreferences pref = getSharedPreferences("pref", MODE_PRIVATE);
-                // Comment
+                // Comment 2
                 pref.getString("hoho","");
             }
 
